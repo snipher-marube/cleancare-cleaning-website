@@ -46,7 +46,9 @@
   id="ftco-navbar"
 >
   <div class="container">
-    <a class="navbar-brand" href="{% url 'home' %}">Clean<span>care</span></a>
+    <a class="navbar-brand" href="{% url 'home' %}">
+      <img src="{% static 'images/logo.png' %}" alt="logo" style="height: 90px;" />
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -61,12 +63,12 @@
     <div class="collapse navbar-collapse" id="ftco-nav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="{% url 'services' %}" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="{% url 'portifolio' %}" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="{% url 'pricing' %}" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </div>
