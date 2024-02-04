@@ -15,6 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'snipherdev.pythonanywhere.com',
+    '127.0.0.1'
     
     ]
 
@@ -30,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'page.apps.PageConfig',
     'blog.apps.BlogConfig',
+    'appointment',
 ]
 
 MIDDLEWARE = [
